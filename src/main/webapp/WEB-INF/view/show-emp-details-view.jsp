@@ -10,7 +10,21 @@
 <body>
 <h2>Dear Employee, you are welcome!</h2>
 <%--Your name: ${param.employeeName}--%>
-Your name: ${nameAttribute}
+Your name: ${employee.name}
+<br>
+<br>
+Your surname: ${employee.surName}
+<br>
+<br>
+Your salary: ${employee.salary}
+<br>
+<br>
+Your department: ${employee.department}
+<br>
+<br>
+Your car: ${employee.carBrand}
+<br>
+<br>
 
 </body>
 </html>
