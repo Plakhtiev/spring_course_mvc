@@ -10,12 +10,15 @@
 <h2>Dear Employee, Please enter your details</h2>
 <form:form action="showDetails" modelAttribute="employee">
     Name <form:input path="name"/>
+    <form:errors cssStyle="color: red" path="name"/>
     <br>
     <br>
     Surname <form:input path="surName"/>
+    <form:errors cssStyle="color: red" path="surName"/>
     <br>
     <br>
     Salary <form:input path="salary"/>
+    <form:errors cssStyle="color: red" path="salary"/>
     <br>
     <br>
     Department <form:select path="department">

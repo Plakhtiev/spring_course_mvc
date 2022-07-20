@@ -1,11 +1,19 @@
 package com.jaroslav.spring.mvc;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Employee {
+    @Size(min = 2, message = "name must be min 2 symbols")
     private String name;
+    @NotBlank(message = "surname is required")
     private String surName;
+    @Min(value = 499, message = "must be greater then 499")
+    @Max(value = 1200, message = "must be less then 1200")
     private int salary;
     private String department;
     private String carBrand;
