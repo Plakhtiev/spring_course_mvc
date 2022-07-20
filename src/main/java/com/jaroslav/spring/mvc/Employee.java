@@ -1,5 +1,7 @@
 package com.jaroslav.spring.mvc;
 
+import com.jaroslav.spring.mvc.validation.CheckEmail;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -20,6 +22,8 @@ public class Employee {
 
     private Map<String, String> departments;
     private Map<String, String> carBrands;
+    @CheckEmail(value = "abc.com", message = "test")
+    private String email;
 
     public Employee() {
         departments = new HashMap<>();
@@ -53,6 +57,14 @@ public class Employee {
 
     public void setDepartments(Map<String, String> departments) {
         this.departments = departments;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getCarBrand() {

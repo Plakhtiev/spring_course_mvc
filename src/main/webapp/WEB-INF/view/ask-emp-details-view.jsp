@@ -21,6 +21,10 @@
     <form:errors cssStyle="color: red" path="salary"/>
     <br>
     <br>
+    email <form:input path="email"/>
+    <form:errors cssStyle="color: red" path="email"/>
+    <br>
+    <br>
     Department <form:select path="department">
     <form:options items="${employee.departments}"/>
     <br>

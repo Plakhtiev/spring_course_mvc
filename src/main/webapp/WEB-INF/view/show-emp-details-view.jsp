@@ -25,6 +25,9 @@ Your department: ${employee.department}
 Your car: ${employee.carBrand}
 <br>
 <br>
+Your email: ${employee.email}
+<br>
+<br>
 
 </body>
 </html>
